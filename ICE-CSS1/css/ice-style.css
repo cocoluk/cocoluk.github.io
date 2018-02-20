@@ -40,7 +40,8 @@ aside {
 	background-size: 175px 180px;
 	background-position: bottom;
 	text-align: left;
-	list-style-position: inside;
+	/*list-style-position: inside;*/
+	list-style-type: disc;
 	display: inline-block;
 	height: 345px;
 	padding: 30px;
@@ -49,7 +50,14 @@ aside {
 }
 
 #content {
-	background: #556B2F;
+	background: #4F5E4F;
+	display: inline-block;
+	width: 85%;
+}
+
+ul {
+	list-style-type: none;
+	text-align: center;
 }
 
 footer {
