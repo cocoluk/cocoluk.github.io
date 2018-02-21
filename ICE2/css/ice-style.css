@@ -37,7 +37,7 @@ nav ul li a {
 
 aside {
 	background: white url("http://www.literarygenius.info/images/william-shakespeare.jpg") no-repeat;
-	background-size: 175px 180px;
+	background-size: contain;
 	background-position: bottom;
 	text-align: left;
 	/*list-style-position: inside;*/
@@ -47,22 +47,24 @@ aside {
 	padding: 30px;
 	position: absolute;
 	right: 0px;
-	width: 15%;
+	width: 10%;
+	text-align: center
 }
 
 #content {
 	background: #4F5E4F;
 	display: inline-block;
-	width: 85%;
+	width: 86%;
+	height: 357px;
 }
 
-ul {
+#content ul {
 	list-style-type: none;
 	text-align: center;
 }
 
 footer {
 	background: green;
-	padding: 31px;
+	padding: 15px;
 }
 
