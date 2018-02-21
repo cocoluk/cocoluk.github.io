@@ -1,0 +1,87 @@
+
+
+@media only screen and (min-width: 650px){
+	.top-nav ul{
+		margin:0;
+	    padding:0;
+	    list-style-type:none;
+	    text-align:center;
+	}
+	.top-nav ul li{
+		display: inline-block;
+	}
+	.photo-cell img[alt*="Yellow Vertical Rectangle"]{
+		display: inline-block;
+		width : 45%;
+		height: 25%;
+		margin-bottom:10px;
+	  	float:left;
+	}
+	.photo-cell img[alt*="Bluish-purple Vertical Rectangle"]{
+		display:inline-block;
+		width : 45%;
+		height: 25%;
+		margin-bottom:10px;
+	  	float:right;
+	}
+
+
+}
+
+@media only screen and (min-width: 1000px){
+	.photo-cell img[alt*="Black Horizontal Rectangle"]{
+		width: 50%;
+		float: left;
+	}
+	.photo-cell img[alt*="Maroon Horizontal Rectangle"] {
+		width: 50%;
+		float: right;
+	}
+
+	.photo-cell img[alt*="Yellow Vertical Rectangle"]{
+		display: inline-block;
+		width : 24%;
+		clear: both;
+		margin-right: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	  	float: left;
+	}
+	.photo-cell img[alt*="Bluish-purple Vertical Rectangle"]{
+		display: inline-block;
+		width : 24%;
+		margin-top: 5px;
+		margin-bottom:5px;
+	  	float:left;
+	}
+	.photo-cell img[alt*="Green Horizontal Rectangle"]{
+		display: inline-block;;
+		width: 50%;
+		float: right;
+	}
+
+	.photo-cell img[alt*="Light Blue Horizontal Rectangle"]{
+		display: inline-block;
+		float: left;
+		width: 50%;
+		clear: both;
+	}
+
+	.photo-cell img[alt*="Red Horizontal Rectangle"]{
+		display: inline-block;
+		width: 50%;
+		float: right;
+	}
+
+
+	.logo {
+		float: left;
+	}
+	.top-nav ul {
+		text-align: right;
+		line-height: 50px;
+		padding: 0;
+		display: inline-block;
+		float: right;
+	}
+	}
