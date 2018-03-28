@@ -1,8 +1,14 @@
 #logo {
   padding:20px;
+  display: inline-block;
+}
+
+#typewriter {
+  text-align: center;
 }
 
 nav {
+  font-size: 100%;
   display: inline;
   padding-left: 50px;
   padding-right: 50px;
@@ -11,8 +17,8 @@ nav {
 }
 
 nav ul {
-  padding: 10px;
-  text-align: center;
+  display: inline-block;
+  float: right;
 }
 
 nav li {
@@ -27,29 +33,48 @@ nav li {
 nav ul li a {
   text-decoration: none;
   color: black;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li a:hover {
+  color: gray;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  font-family: 'Quicksand',sans-serif;
+  padding: 100px;
+  font-size: 15px;
+  text-align: center;
+}
+
+#zorm {
+
 }
 
 
-.typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .05em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+.bio h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+.bio {
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: "Montserrat",sans-serif;
+  color: gray;
+  line-height: 1.5;
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+#typewriter {
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
+
+
+
+

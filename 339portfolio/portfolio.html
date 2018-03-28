@@ -6,28 +6,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+    </script>
+
+
 
   <div id ="logo">
     <img src="./images/logo.png" width="100" height="108.15" alt="portfolio logo">
   </div>
 
-   <nav>
+<nav>
         <ul>
-          <li><a href="#">PORTFOLIO</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
           <li><a href="#">RESUME</a></li>
-          <li><a href="#">ABOUT</a></li>
+          <li><a href="about.html">ABOUT</a></li>
         </ul>
       </nav>
+  
+
+<div id='typewriter'>
+  <h1>I am a product
+  <span
+     class="txt-rotate"
+     data-period="2000"
+     data-rotate='[ "designer.", "marketer.", "strategist.", "developer.", "enthusiast." ]'></span>
+</h1>
+</div>
+
 </head>
 
 <body>
-  
 
-      <div class="typewriter">
-      	<h1>Hello.</h1>
-      </div>
+  <div class="grid-container">
+      <div class="grid-item" id="zorm"><img src="./images/zorm.png" width="70%" alt="zorm"></div>
+      <div class="grid-item">TERRA</div>
+      <div class="grid-item">ZORM</div>
+      <div class="grid-item">SUTAKKU</div>
+      <div class="grid-item">PHOTOGRAPHY</div>
+      <div class="grid-item">SKETCHES</div>
+  </div>
+
+
 
 	</body>
 <footer class="footer">
-    <p>This site was created from the excellent portfolio by Maddie Goforth &copy; 2017</p>
+    <p>Courtney Luk &copy; 2018</p>
   </footer>
