@@ -9,7 +9,10 @@
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=PT Sans' rel='stylesheet'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script>
     var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
@@ -34,9 +37,9 @@ TxtRotate.prototype.tick = function() {
   this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
   var that = this;
-  var delta = 300 - Math.random() * 100;
+  var delta = 175 - Math.random() * 100;
 
-  if (this.isDeleting) { delta /= 2; }
+  if (this.isDeleting) { delta /= 2.5; }
 
   if (!this.isDeleting && this.txt === fullTxt) {
     delta = this.period;
@@ -72,7 +75,7 @@ window.onload = function() {
 
 
   <div id ="logo">
-    <img src="./images/logo.png" width="100" height="108.15" alt="portfolio logo">
+    <p> <a href ="portfolio.html"><img src="./images/logo.png" width="100" height="108.15" alt="portfolio logo"></a></p>
   </div>
 
 <nav>
@@ -82,14 +85,14 @@ window.onload = function() {
           <li><a href="about.html">ABOUT</a></li>
         </ul>
       </nav>
-  
+
 
 <div id='typewriter'>
-  <h1>I am a product
+  <h1>I'm Courtney (CoCo) Luk, a product
   <span
      class="txt-rotate"
      data-period="2000"
-     data-rotate='[ "designer.", "marketer.", "strategist.", "developer.", "enthusiast." ]'></span>
+     data-rotate='[ "designer.", "marketer.", "strategist.", "developer.", "analyst.", "manager." ]'></span>
 </h1>
 </div>
 
@@ -98,9 +101,9 @@ window.onload = function() {
 <body>
 
   <div class="grid-container">
-      <div class="grid-item" id="zorm"><img src="./images/zorm.png" width="70%" alt="zorm"></div>
-      <div class="grid-item">TERRA</div>
-      <div class="grid-item">ZORM</div>
+      <div class="grid-item" id="zorm"><a href ="llamasoft.html"><img src="./images/zorm.png" width="100%" alt="zorm"></div>
+      <div class="grid-item" id="zorm"><a href ="llamasoft.html"><img src="./images/terra.png" width="100%" alt="zorm"></div>
+      <div class="grid-item" id="zorm"><a href ="llamasoft.html"><img src="./images/sutakku.png" width="100%" alt="zorm"></div>
       <div class="grid-item">SUTAKKU</div>
       <div class="grid-item">PHOTOGRAPHY</div>
       <div class="grid-item">SKETCHES</div>
@@ -110,5 +113,8 @@ window.onload = function() {
 
 	</body>
 <footer class="footer">
-    <p>Courtney Luk &copy; 2018</p>
+  <div id ="linkedin">
+    <p><a href ="https://www.linkedin.com/in/courtney-luk-814a7183"><img src="./images/linkedin.png" width="20%" alt="linkedin contact">
+    </a></p>
+  </div>
   </footer>

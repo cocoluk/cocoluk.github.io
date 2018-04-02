@@ -8,7 +8,7 @@
 }
 
 nav {
-  font-size: 100%;
+  font-size: 105%;
   display: inline;
   padding-left: 50px;
   padding-right: 50px;
@@ -19,6 +19,7 @@ nav {
 nav ul {
   display: inline-block;
   float: right;
+  padding-top: 10px;
 }
 
 nav li {
@@ -38,6 +39,10 @@ nav ul li a {
 
 nav ul li a:hover {
   color: gray;
+  outline-style: solid;
+  outline-offset: 15px;
+  outline-color: gray;
+  outline-width: thin;
 }
 
 .grid-container {
@@ -57,9 +62,9 @@ nav ul li a:hover {
 }
 
 
-.bio h2 {
+.bio h1 {
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .bio {
@@ -71,10 +76,54 @@ nav ul li a:hover {
 }
 
 #typewriter {
+  padding-top: 50px;
   padding: 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
+#linkedin {
+  display: inline-block;
+  float: right;
+}
 
+#linkedin:hover {
+}
+
+.proj_title {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  padding-top: 50px;
+  letter-spacing: 0.5px;
+}
+
+.proj_cat {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: gray;
+  padding-bottom: 30px;
+}
+
+.proj_banner {
+  display: block;
+  text-align: center;
+}
+
+.subheading {
+  font-family: 'Raleway', sans-serif;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  letter-spacing: 0.5px;
+  color: gray;
+}
+
+.proj_desc {
+  font-family: 'Lato', sans-serif;
+  padding-left: 100px;
+  padding-right: 100px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
 
 

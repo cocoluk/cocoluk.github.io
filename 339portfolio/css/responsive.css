@@ -1,0 +1,24 @@
+@media only screen and (min-width: 375px) and (max-device-width: 667px) {
+	.top-nav ul{
+		margin:0;
+	    padding:0;
+	    list-style-type:none;
+	    text-align:center;
+	}
+	.top-nav ul li{
+		display: inline-block;
+	}
+}
+
+@media only screen and (min-width: 667px) and (max-device-width: 1112px) {
+	.logo {
+		float: left;
+	}
+	.top-nav ul {
+		text-align: right;
+		line-height: 50px;
+		padding: 0;
+		display: inline-block;
+		float: right;
+	}
+	}
