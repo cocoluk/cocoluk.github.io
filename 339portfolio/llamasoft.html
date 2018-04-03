@@ -9,12 +9,12 @@
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=PT Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
 
 <div id ="logo">
-    <p> <a href ="portfolio.html"><img src="./images/logo.png" width="100" height="108.15" alt="portfolio logo"></a></p>
+    <p> <a href ="portfolio.html"><img src="./images/logo.png" width="100" height="108" alt="portfolio logo"></a></p>
   </div>
 
   <nav>
@@ -24,18 +24,17 @@
           <li><a href="about.html">ABOUT</a></li>
         </ul>
       </nav>
-
   </head>
 
 <body>
   <div class="proj_title"><h1>LLAMASOFT: building a map</h1></div>
   <div class='proj_cat'><h3> USER RESEARCH  /  WEB UI AND UX  /  AGILE PRODUCT DEVELOPMENT</h3></div>
-  <div class='proj_banner'><img src="./images/llamasoft_banner.png" width="70%" alt="zorm"></div>
+  <div class='proj_banner'><img src="./images/llamasoft_banner.png" width="1000" alt="zorm"></div>
   <div class='subheading'><h2>IN SHORT</h2></div>
   <div class='proj_desc'><p>In the summer of 2017, I was part of a 5-member scrum team that developed a map application for LLamasoft using the unique functionalities offered by the Mapbox API. The company was interested in transitioning from Bing to Mapbox as their map provider for its supply chain design software due to its advanced data visualization capabilities used by companies like the Wall Street Journal, Instacart, and Pinterest. Over the course of four 2-week sprints, we worked on this microservice that would "help a user better visualize their supply chain in order to help them utilize LLamasoft software to reduce costs or improve service." The ultimate goal was to build a web application that LLamasoft could use to evaluate whether Mapbox would be a worthwhile investment, leverage in contract negotiations, and bring its maps up to design and functionality standards given people's heightened expectation of web maps. I primarily served as the UX Designer and Business Analyst, so my responsibilities included requirements gathering, managing our Confluence/JIRA project management board, user research and testing, icon design, wireframing, and demo preparation. In the end, we were able to build an application that led LLamasoft to start the integration process of Mapbox into their product development plans for the near future.</p>
   <br>
   Since our application is still being used for negotiations with Mapbox, a public working demo is not available yet.
-  <br></p></div>
+</div>
   <div class='subheading'><h2>USER RESEARCH</h2></div>
   <div class='proj_desc'><p>When this intern team project was proposed, there wasn't a concrete idea as to what the final product should be other than that it should utilize Mapbox. Thus, the given list of requirements were somewhat vague and typical for any mapping application, so one of my first steps was to flush out the given user stories by defining their purposes. These are some of the expanded user stories with their elaborated purposes <mark>highlighted</mark>:
 
@@ -48,14 +47,23 @@
     This was needed to build a user flow, which would help as we began structuring our application and prioritizing feature implementation. Given our collective limited understanding about supply chain design, our team interviewed customer success members, consultants, and product managers within the company to get a better idea of how supply chain designers currently use maps. I also critiqued LLamasoft's existing interactive map in Supply Chain Guru X by sketching out and analyzing its UI for flow inconsistencies as well as unintuitive functionalities. This gave me a good baseline to start designing from since it helped me understand the standardized LLamasoft map elements that needed to be carried over into the new application. It also was an opportunity to identify areas of improvement, which we could then be wary of when designing our new application.<br><br>
 
     From all of this, I could then think about how data visualization techniques could add greater value to supply chain designer's analytical experience. This basic understanding was ultimately necessary before we could implement the more advanced Mapbox functionalities to create compelling use cases. 
-  </p></div>
-
   </div>
-</body>
+  <div class='pic'><img src="./images/user_reqs.png" width="700" alt="zorm"></div>
+  <div class='subheading'><h2>UI EXPLORATION AND WIREFRAMES</h2></div>
+  <div class='proj_desc'><p>The most challenging part about this project was balancing the integration of standardized LLamasoft map features such as complex data grids, highly customizable markers, and data layer toggling with a new application that was more focused towards showcasing Mapbox's advanced data visualization tools. We needed to seamlessly combine everything to maintain a consistent user flow. Therefore the objective of this map became creating an entirely new yet familiar application, leaving a lot of room for ambiguity and introducing us to the crazy world of product development at a company with an established product line. <br><br>
+    During my lo-fi prototyping, I experimented with using modules (shown above) for handling each user task. This was in an attempt to compartmentalize these long processes, limiting the number of options presented at once by guiding the user one step at a time. After sharing my wireframes with another UX Designer at the company, it was brought to my attention that modules may not be the best choice due to their lack of user autonomy. Being forced to stay within a box while interacting with an application can leave you feeling trapped and frustrated, especially when trying to quickly explore all the different functionalities. This led me to focus on housing additional actionable items in some type of side bar that could display in conjunction and in better reference to the map. <br><br>
+    After evaluating Supply Chain Guru X's maps, one of my initial concerns was ensuring that there was an adequate amount of space left for displaying the actual map after adding a side navigation menu, data grid, and other in depth user tasks such as marker customization, site searching, and multiple layer toggling. Unlike SCGX, I wanted the map to be visible at all times and also retain the majority of screen space. This is what made it a truly unique project from a UX perspective, as designing B2B applications are arguably the most challenging due to their extensive list of functional requirements for large scale relational data management. From sketching out potential layout ideas, I was able to decide that there should be a maximum of 2 content boxes (data grid and central maps panel) in order to maintain the map as the center of a user's attention. To further optimize the map's space, these two panels could readily be hidden in order to only show the map.</p></div>
+  <div class='subheading'><h2>PROTOTYPING AND IMPLEMENTATION</h2></div>
+  <div class='proj_desc'><p>After completing user research and design planning in the first sprint, I moved on to creating some hi-fi wireframes in Sketch to convey the application's general look and structure to the front-end developers. I was able to efficiently pass my UI designs to them through Zeplin, which prepares detailed specs for each wireframe.<br><br>At the end of the second sprint, our team was able to execute my designs of the core LLamasoft features (layer toggling, marker customization, data grid, pop-up info bubbles) and we were now ready to start pushing the Mapbox API. The first visualization tool implemented were isochrones, which provides a colored scale representing the total area transportation can reach given time constraints. This could be potentially valuable for users to evaluate or test service options within regions.<br><br>From here on out, we were able to fully utilize Mapbox as we kept adding different types of data visualization tools throughout the course of our last two sprints. This included the ability to create convex hulls outlining the customer service area of a distribution center, replace straight line flows with actual driving routes, and clustering sites for a more responsive and legible data summarization at different zoom levels. Due to the incremental tool additions, my design process became more of a puzzle. With each new feature our team wanted to add, I had to find an intuitive way to fit it in an existing user flow. I strayed away from creating new flows in order to maintain consistency and centralize related tools throughout the application.</p></div>
+  <div class='subheading'><h2>RETROSPECTIVE</h2></div>
+  <div class='proj_desc'><p>To conclude our final sprint, we presented our final application to LLamasoft's entire development team as well as the CEO. We also gave the same presentation to Mapbox, focusing on how the integration went overall and kicking off contract talks with a working application that exposed the strengths and constraints of its technology from LLamasoft's perspective.<br><br>
+This internship provided me with a very realistic exposure to product development. Requirements changed frequently, our mentor's overarching goals were unaligned but then reconciled, and new features led to new problems which in turn led to comprehensive solutions. Being able to work on a self-serving scrum team to build an application from ideation all the way through implementation was an amazing opportunity to have over the course of only a summer. It gave me the unique chance to experience working in a professional software development environment and solidified my interest in being a full-time product designer in the future. </p></div>
 
-<footer class="footer">
+<footer>
   <div id ="linkedin">
-    <p><a href ="https://www.linkedin.com/in/courtney-luk-814a7183"><img src="./images/linkedin.png" width="20%" alt="linkedin contact">
+    <p><a href ="https://www.linkedin.com/in/courtney-luk-814a7183"><img src="./images/linkedin.png" width="20" alt="linkedin contact">
     </a></p>
   </div>
   </footer>
+
+</body>

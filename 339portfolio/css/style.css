@@ -1,49 +1,11 @@
-#logo {
-  padding:20px;
-  display: inline-block;
-}
+
 
 #typewriter {
   text-align: center;
+  padding-top: 50px;
 }
 
-nav {
-  font-size: 105%;
-  display: inline;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
 
-nav ul {
-  display: inline-block;
-  float: right;
-  padding-top: 10px;
-}
-
-nav li {
-  text-decoration: none;
-  display: inline;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: black;
-  font-family: 'Montserrat', sans-serif;
-}
-
-nav ul li a:hover {
-  color: gray;
-  outline-style: solid;
-  outline-offset: 15px;
-  outline-color: gray;
-  outline-width: thin;
-}
 
 .grid-container {
   display: grid;
@@ -124,6 +86,10 @@ nav ul li a:hover {
   padding-right: 100px;
   line-height: 1.5;
   letter-spacing: 0.5px;
+}
+
+.pic {
+  text-align: center;
 }
 
 

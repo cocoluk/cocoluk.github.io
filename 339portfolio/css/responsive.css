@@ -1,24 +1,79 @@
 @media only screen and (min-width: 375px) and (max-device-width: 667px) {
-	.top-nav ul{
+	#logo {
+		 text-align: center;
+		 padding-top: 25px;
+		 padding-bottom: 25px;
+	}
+	nav ul{
 		margin:0;
 	    padding:0;
-	    list-style-type:none;
+	    display: block;
 	    text-align:center;
 	}
-	.top-nav ul li{
-		display: inline-block;
+	nav ul li{
+		display: block;
+	}
+	nav ul li a {
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 25px;
+		outline: 3px solid white;
+		background-color: #D3D3D3;
+		text-decoration: none;
+		color: black;
+		display: block;
+		padding: 50px;
+	}
+	nav ul li a:hover {
+		color: red;
+	}
+	#typewriter {
+		display: none;
 	}
 }
 
 @media only screen and (min-width: 667px) and (max-device-width: 1112px) {
-	.logo {
-		float: left;
+	#logo {
+  padding:20px;
+  display: inline-block;
+  float: left;
+}
+	nav {
+	  font-size: 105%;
+	  display: inline;
+	  padding-left: 50px;
+	  padding-right: 50px;
+	  padding-top: 10px;
+	  padding-bottom: 10px;
 	}
-	.top-nav ul {
-		text-align: right;
-		line-height: 50px;
-		padding: 0;
-		display: inline-block;
-		float: right;
+
+	nav ul {
+	  display: inline-block;
+	  float: right;
+	  padding-top: 10px;
 	}
+
+	nav li {
+	  text-decoration: none;
+	  display: inline;
+	  padding-left: 50px;
+	  padding-right: 50px;
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	}
+
+	nav ul li a {
+	  text-decoration: none;
+	  color: black;
+	  font-family: 'Montserrat', sans-serif;
+	}
+
+	nav ul li a:hover {
+	  color: gray;
+	  outline-style: solid;
+	  outline-offset: 15px;
+	  outline-color: gray;
+	  outline-width: thin;
+	}
+	
 	}
