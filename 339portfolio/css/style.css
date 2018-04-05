@@ -1,8 +1,21 @@
+body {
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+.flex-container .proj_banner {
+  padding: 25px;
+}
 
 #typewriter {
   text-align: center;
   padding-top: 50px;
+  color: white;
 }
 
 
@@ -24,22 +37,23 @@
 }
 
 
-.bio h1 {
+.bio h2 {
   text-align: center;
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .bio {
   padding-left: 100px;
   padding-right: 100px;
+  padding-top: 200px;
   font-family: "Montserrat",sans-serif;
   color: gray;
   line-height: 1.5;
 }
 
 #typewriter {
-  padding-top: 50px;
-  padding: 20px;
+  padding-top: 200px;
+  text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -54,7 +68,7 @@
 .proj_title {
   font-family: "Raleway", sans-serif;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 200px;
   letter-spacing: 0.5px;
 }
 
@@ -89,7 +103,18 @@
 }
 
 .pic {
+  padding-right: 10px;
+  padding-top: 25px;
   text-align: center;
+  display: inline-block;
+}
+
+.pic_right {
+  padding-left: 100px;
+  padding-right: 10px;
+  padding-top: 25px;
+  text-align: center;
+  display: inline-block;
 }
 
 
