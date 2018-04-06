@@ -43,10 +43,6 @@ h3 {
   text-align: center;
 }
 
-#zorm {
-
-}
-
 
 .bio h2 {
   display: block;
@@ -130,6 +126,10 @@ h3 {
   padding-top: 25px;
   text-align: center;
   display: inline-block;
+}
+
+.spotify {
+  text-align: center;
 }
 
 
