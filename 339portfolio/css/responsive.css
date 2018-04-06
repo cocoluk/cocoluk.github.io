@@ -148,6 +148,10 @@
 	  color: black;
 	  font-family: 'Montserrat', sans-serif;
 	}
+	nav ul li a.active-page {
+		background-color: black;
+		color: white;
+	}
 
 	nav ul li a:hover {
 	  outline-style: solid;
