@@ -71,7 +71,7 @@
 	}
 
 	nav ul li a[href$='photography.html']{
-		background-image: url('../images/bird.JPG');
+		background-image: url('../images/background.jpg');
 		background-size: 120%;
 		background-repeat: no-repeat;
 	}
