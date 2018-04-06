@@ -37,6 +37,9 @@
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+	footer {
+		text-align: center;
+	}
 	
 }
 @media only screen and (min-width: 667px) and (max-width: 1024px) {
@@ -92,6 +95,10 @@
 	}
 	#typewriter {
 		display: none;
+	}
+	footer {
+		padding-top: 50px;
+		text-align: center;
 	}
 
 }
