@@ -1,4 +1,4 @@
-@media only screen and (max-device-width: 667px) {
+@media only screen and (max-width: 667px) {
 	#logo {
 		 text-align: center;
 		 padding-top: 25px;
