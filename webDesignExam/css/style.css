@@ -33,3 +33,7 @@ img {
 	width: 50%;
 }
 
+body {
+	background-image: url("../images/tic-tac-toe.png");
+}
+

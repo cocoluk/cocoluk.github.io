@@ -11,13 +11,18 @@
   <body>
     <h1>Courtney Luk</h1>
     <div class="flex-container">
-      <div class="img 1"><img src="./images/examPic.JPG" alt="exam pic"></div>
+      <div id="edit" class="img 1"><img src="./images/examPic.JPG" alt="exam pic"></div>
       <div class="img 2"><img src="./images/UMSI-logo.jpg" alt="logo"></a></div>
     </div>
-    <button type="button">Hide Image</button>
-    <button type="button">Show Image</button>
+    <button type="button" onclick="Display()">Hide Image</button>
+    <button type="button" onlick="Display2()">Show Image</button>
 
   <script type="text/javascript">
-  doc
+  function Display() {
+    document.getElementById("edit").style.visibility="hidden";
+  }
+  function Display2() {
+    document.getElementById("edit").style.visibility="visible";
+  }
   </script>
   </body>
