@@ -1,0 +1,35 @@
+.flexcontainer {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	list-style: none;
+	flex-flow: row-reverse wrap;
+}
+
+img {
+	display: block;
+	max-height: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.img {
+  border-style: solid;
+  border-color: blue;
+  border-width: 5px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 5%;
+}
+
+.1 {
+	width: 50%;
+}
+
+.2 {
+	width: 50%;
+}
+
